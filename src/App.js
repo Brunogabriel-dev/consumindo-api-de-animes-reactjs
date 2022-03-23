@@ -26,7 +26,7 @@ export default function App() {
       onChange={(search) => setText(search)} 
       />
       {info.data && (
-        <ul>
+        <ul className='anime-list'>
           {info.data.map((anime) => (
             <li key={anime.id}>
               {anime.attributes.canonicalTitle}
