@@ -29,7 +29,10 @@ export default function App() {
         <ul className='anime-list'>
           {info.data.map((anime) => (
             <li key={anime.id}>
-              <img src={anime.attributes.posterImage.small} />
+              <img 
+              src={anime.attributes.posterImage.small} 
+              alt={anime.attributes.canonicalTitle}
+              />
               {anime.attributes.canonicalTitle}
             </li>
           ))}
